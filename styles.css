@@ -37,7 +37,7 @@ h1 {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: : center;
 }
 
 /* --- End global --- */
@@ -77,6 +77,27 @@ h1 {
 /* --- End Navbar --- */
 
 
+/* Footer */
+.footer {
+  position: fixed;
+  width: 100vw;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  z-index: 4;
+  background-color: white;
+  display: flex;
+  padding-left: 5px;
+}
+
+.footer a, .footer p {
+  font-size: 12px;
+  margin: 0;
+}
+.footer p {
+  margin-right: 5px;
+}
+/* --- End Footer --- */
 
 /* Home */
 .home {
