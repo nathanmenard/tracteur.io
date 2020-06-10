@@ -32,9 +32,12 @@ h1 {
 /* Parallax*/
 .who, .what, .contact {
   z-index: 2;
-  height: 100vh;
+  padding: 100px 0;
   width: 100vw;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* --- End global --- */
@@ -161,17 +164,17 @@ h1 {
 
 /* Who */
 .who {
-  background-color: blue;
+  background-color: rgb(240 240 240);
 }
 
 
 /* What */
 .what {
-  background-color: red;
+  background-color: white;
 }
 
 
 /* Contact */
 .contact {
-  background-color: blue;
+  background-color: rgb(240 240 240);
 }
