@@ -33,7 +33,6 @@ h1 {
 .who, .what, .contact {
   z-index: 2;
   padding: 100px 0;
-  width: 100vw;
   position: relative;
   display: flex;
   align-items: center;
@@ -88,6 +87,7 @@ h1 {
   background-color: white;
   display: flex;
   padding-left: 5px;
+  background-color: rgb(240 240 240)
 }
 
 .footer a, .footer p {
