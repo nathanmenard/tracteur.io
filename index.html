@@ -9,12 +9,68 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"></script>
 
-    <script src="application.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/js/bootstrap.js"></script>
+    <script src="scrollBuilder.js"></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+    <title>Tracteur</title>
   </head>
 
   <body>
-    <h1>Test</h1>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="home-btn" href=""><img class="navbar-brand" src="images/logo.png" alt="Logo fictif Germinal pour tracteur.io, LA référence en matière de tracteur." ></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="images/menu.png" alt="Icon menu mobile de tracteur.io">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link who-btn" href="#">Who we are<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item what-btn">
+              <a class="nav-link" href="#">What we do</a>
+            </li>
+            <li class="nav-item contact-btn">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End navbar -->
+
+    <div class="beginning"></div>
+    <div class="home">
+    </div>
+
+
+    <div class="spacer-100vh"></div>
+    <div class="who">
+      <h1>Test</h1>
+    </div>
+
+
+    <div class="what">
+
+    </div>
+
+
+    <div class="contact">
+
+    </div>
   </body>
 </html>
+
+
+<script>
+  scrollBuilder(".home-btn", ".beginning")
+  scrollBuilder(".who-btn", ".who")
+  scrollBuilder(".what-btn", ".what")
+  scrollBuilder(".contact-btn", ".contact")
+</script>
