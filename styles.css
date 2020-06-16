@@ -112,12 +112,6 @@ h1 {
   background-image: url("images/bg.png");
   background-size: cover;
   background-position: cover;
-
-  /* Parallax */
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
 }
 .home-container {
   height: 100vh;
@@ -154,6 +148,13 @@ h1 {
   min-height: 100%;
 }
 @media screen and (min-width: 768px) {
+  .home {
+    /* Parallax */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
   .left-part {
     width: 40%;
   }
@@ -170,7 +171,12 @@ h1 {
   }
 }
 @media screen and (max-width: 767px) {
-
+  .home {
+    position: relative;
+  }
+  .spacer-100vh {
+    display: none;
+  }
   .right-part {
     display: none;
 
